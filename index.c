@@ -39,7 +39,7 @@ int main()
         system("cls");
         readIncomeFromFile("income_data.txt");
         readExpensesFromFile("expenses_data.txt");
-//        system("color 9");
+        system("color 9");
         printf("\n\n\n\t\t\t******* WELCOME TO THE MAIN MENU *******\n");
         read_goal();
         // Initialize the transactions array
@@ -115,7 +115,7 @@ void login_user()
     char username[10];
     char password[10];
     system("cls");
-//    system("color 9");
+    system("color 9");
     printf("\n\n\n");
     printf("\n\t\t\t\t            ---------***---------");
     printf("\n\t\t\t            ~~~~~~~~~~~~~~~~~ * ~~~~~~~~~~~~~~~~~ ");
@@ -247,7 +247,7 @@ void save_income()
     float amount;
     int x;
     // Read existing data from the file
-    printf("\t\tEnter The Date: ");
+    printf("\n\n\t\tEnter The Date: ");
     scanf("%s",d);
     printf("\n\t\t1. Salary\n");
     printf("\t\t2. Bonus\n");
@@ -376,7 +376,7 @@ void save_expenses()
     int x;
     // Read existing data from the file
     readExpensesFromFile("expenses_data.txt");
-    printf("\t\tEnter The Date: ");
+    printf("\n\n\t\tEnter The Date: ");
     scanf("%s",d);
     printf("\n\t\t1. Food\n");
     printf("\t\t2. Transportation\n");
@@ -894,5 +894,3 @@ void exit_function()
     }
     printf("\n\n\n\n");
 }
-
-
